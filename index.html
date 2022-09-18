@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;300;400;500;700&family=Spartan:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>The planets</title>
+    <script src="https://kit.fontawesome.com/dc238c17a3.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+        integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav__title">
+            <p>THE PLANETS</p>
+        </div>
+        <div class="nav__hamburger">
+            <img src="./assets/icon-hamburger.svg" alt="hamburger menu">
+        </div>
+        <div class="nav__items">
+            <div class="nav__items__item mercury active">
+                <p>MERCURY</p>
+            </div>
+            <div class="nav__items__item venus">
+                <p>VENUS</p>
+            </div>
+            <div class="nav__items__item earth">
+                <p>EARTH</p>
+            </div>
+            <div class="nav__items__item mars">
+                <p>MARS</p>
+            </div>
+            <div class="nav__items__item jupiter">
+                <p>JUPITER</p>
+            </div>
+            <div class="nav__items__item saturn">
+                <p>SATURN</p>
+            </div>
+            <div class="nav__items__item uranus">
+                <p>URANUS</p>
+            </div>
+            <div class="nav__items__item neptune">
+                <p>NEPTUNE</p>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="planet">
+            <img src="./assets/planet-mercury.svg" alt="img of a planet" class="planet__img">
+            <div class="planet__info">
+                <div class="planet__info__text">
+                    <h1 class="planet__info__text__name">Mercury</h1>
+                    <p class="planet__info__text__description">Mercury is the smallest planet in the Solar System and
+                        the closest
+                        to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's
+                        planets.
+                        Mercury is one of four terrestrial planets in the Solar System, and is a rocky body like Earth.
+                    </p>
+                    <p class="planet__info__text__source">
+                        Source:
+                        <a href="https://en.wikipedia.org/wiki/Mercury_(planet)" target="_blank">Wikipedia</a>
+                        <i class="fa-solid fa-share"></i>
+                    </p>
+                </div>
+                <div class="planet__info__buttons">
+                    <button><span>01</span>OVERVIEW</button>
+                    <button><span>02</span>INTERNAL STRUCTURE</button>
+                    <button><span>03</span>SURFACE GEOLOGY</button>
+                </div>
+            </div>
+        </div>
+        <div class="planet-data">
+            <div class="planet-data__item">
+                <p class="planet-data__item__name">ROTATION TIME</p>
+                <p class="planet-data__item__value">0.99 DAYS</p>
+            </div>
+            <div class="planet-data__item">
+                <p class="planet-data__item__name">REVOLUTION TIME</p>
+                <p class="planet-data__item__value">87.97 DAYS</p>
+            </div>
+            <div class="planet-data__item">
+                <p class="planet-data__item__name">RADIUS</p>
+                <p class="planet-data__item__value">2,439.7 KM</p>
+            </div>
+            <div class="planet-data__item">
+                <p class="planet-data__item__name">AVERAGE TEMP.</p>
+                <p class="planet-data__item__value">16°C</p>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./javascript/script.js" type="module"></script>
+    <!-- <script src="./javascript/animations.js" type="module"></script> -->
+
+</body>
+
+</html>
